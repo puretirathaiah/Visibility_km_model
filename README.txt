@@ -21,13 +21,14 @@ SN	Snow indicator (In the monthly average, total days that snowed)
 TS	Indicates whether there storm (In the monthly average, Total days with thunderstorm)
 FG	Indicates whether there was fog (In the monthly average, Total days with fog)
 
-Visibility.ipynb: This Jupytor notebook file is used to explore different models to find the optimal model for this problem.
+Visibility.ipynb: The Jupytor notebook file is used to explore different models to find an optimal model for the problem.
 
-visibility_model.py: It contains the optimal model for this problem.
+visibility_model.py: The python file contains an optimal model for the problem.
 
 To deploy the model:
-
-	Go to the file location in cmd:
-
-	>>> set FLASK_APP=app.py
-	>>> flask run
+	- download all the folders
+	- run the visibility_model.py if the model want to be saved to folder (if visibility_model.pkl is not present in the folder) 
+	- Go to the file location in cmd
+		>>> set FLASK_APP=app.py
+		>>> flask run
+	- Use the url http://127.0.0.1:5000/ in a browser window, where we can give inputs to predict the visibility 
